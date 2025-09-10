@@ -2,11 +2,25 @@ import turtle
 from turtle import *
 t = Turtle()
 t.shape('turtle')
-t.forward(200)
 
+""" def equal(x):
+    t.forward(x)
+    t.right(240)
+    t.forward(x)
+    t.right(240)
+    t.forward(x)
+    t.right(240)
+equal(120) """
 
+t.speed(5)
 
-turtle.done
-def message(input):
-    print(input)
-message("Hello Class")
+def square():
+    for i in range(4): 
+     t.forward(100)
+    t.left(90)
+    t.forward(100)
+    t.left(90)
+    t.forward(100)
+    t.left(90)
+    t.forward(100)
+    t.left(90)
