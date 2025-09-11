@@ -12,15 +12,40 @@ t.shape('turtle')
     t.right(240)
 equal(120) """
 
-t.speed(5)
 
-def square():
-    for i in range(4): 
-     t.forward(100)
+""" def square(x,y):
+    t.forward(x)
     t.left(90)
-    t.forward(100)
+    t.forward(y)
     t.left(90)
-    t.forward(100)
+    t.forward(x)
     t.left(90)
-    t.forward(100)
+    t.forward(y)
     t.left(90)
+square(125,100)
+
+
+for i in range(240):
+    square(125,100)
+    t.left(5) 
+   
+    t.speed(0) """
+
+def spiralstar(x):
+    t.forward(x)
+    t.left(144)
+    t.forward(x)
+    t.left(144)
+    t.forward(x)
+    t.left(144)
+    t.forward(x)
+    t.left(144)
+    t.forward(x)
+    t.left(144)
+spiralstar(20)
+
+size = 25
+for i in range(60):
+    spiralstar(size)
+    t.left(5)
+    size += 25
